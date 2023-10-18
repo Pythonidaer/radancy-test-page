@@ -1,0 +1,230 @@
+body {
+  font-family: Arial;
+  /* background: rgb(196, 157, 157); */
+}
+
+h1,
+h2,
+h3 {
+  color: #00945f;
+}
+
+p {
+  color: #888888;
+}
+
+.header {
+  width: 100%;
+  background-image: url('../assets/loan-officer.png');
+  height: 575px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 0 25px;
+  background-repeat: no-repeat;
+  /* transform: translateY(-30px); */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 168px;
+  background: white;
+}
+
+.trapezoid {
+  border-bottom: 700px solid #005944;
+  border-left: 200px solid transparent;
+  border-right: 0 solid transparent;
+  height: 0;
+  width: 50%;
+  margin-left: auto;
+  transform: translateX(150px);
+  opacity: 0.8;
+  /* z-index: 100; */
+}
+
+.header-logo-image,
+.investments-section,
+.grid-container,
+.loans-section,
+.quotes-section,
+.footer {
+  margin: 0 1.5rem;
+}
+
+.investments-section h2,
+.advantages-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.investments-section hr,
+.advantages-section hr {
+  /* margin-top: 1rem; */
+  width: 80px;
+  height: 1px;
+  background-color: #00945f;
+  margin: 1.25rem auto;
+}
+
+.investments-section p,
+.grid-container p {
+  line-height: 1.75rem;
+}
+
+.investments-section p {
+  margin-bottom: 2rem;
+}
+
+.investments-section .link-container {
+  text-align: center;
+}
+
+.investments-section a {
+  display: inline-block;
+  background: #e97300;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.investments-section a:hover,
+.investments-section a:focus {
+  background: #b55a00;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 2.5rem;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Adjust the gap as needed */
+
+  /* On screens smaller than 768px, change to a single column */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* One column */
+  }
+}
+
+.grid-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid-item {
+  padding-bottom: 60px;
+}
+
+.grid-item p {
+  margin-bottom: 0.5rem;
+}
+
+.grid-item a {
+  color: #9ab65e;
+  text-decoration: none;
+}
+
+.grid-item a:hover,
+.grid-item a:focus {
+  color: #758b45;
+}
+
+.loans-section h2 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  background: #00945f;
+  color: #fff;
+  text-align: center;
+}
+
+.loans-section p {
+  background: #ebf7f5;
+  padding: 2rem 3.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.quotes-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Adjust spacing, padding, or other styles as needed */
+  margin-bottom: 10rem;
+}
+
+.quote {
+  flex: 1;
+  max-width: 15%; /* Adjust for your desired column width */
+  text-align: center; /* Center-align the contents */
+  padding: 0 3rem;
+}
+
+.quote:nth-child(2) {
+  max-width: 35%;
+}
+
+.quote img {
+  padding-bottom: 0.75rem;
+}
+
+.quote-icon {
+  font-size: 30px; /* Adjust the font size for the quote icon */
+}
+
+.quote blockquote {
+  font-style: italic;
+  line-height: 1.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.quote-author {
+  color: #00945f;
+  line-height: 1.75rem;
+}
+
+.quote p {
+  position: relative;
+}
+
+.quote p:first-child::before {
+  content: '"'; /* Quotation character */
+  font-size: 5rem; /* Adjust the font size as needed */
+  position: absolute;
+  top: 0; /* Adjust the position */
+  left: -30px; /* Adjust the position */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .quote {
+    max-width: 100%; /* Set to full width on smaller screens */
+  }
+}
+
+.footer {
+  margin-bottom: 2.5rem;
+}
+
+.footer .social-icons {
+  margin: 2rem 0;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.footer a:visited {
+  color: #888;
+}
+
+.footer .footer-text {
+  margin-bottom: 2rem;
+}
+
+.footer .footer-links a {
+  text-decoration: none;
+  color: #000;
+}
