@@ -174,12 +174,12 @@ nav {
   margin-top: 2.5rem;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   grid-gap: 20px; /* Adjust the gap as needed */
-
-  /* On screens smaller than 768px, change to a single column */
 }
+
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* One column */
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 }
 
@@ -193,9 +193,6 @@ nav {
 }
 
 @media (max-width: 767px) {
-  .grid-container {
-    grid-gap: 0;
-  }
   .grid-item {
     padding-bottom: 50px;
   }
