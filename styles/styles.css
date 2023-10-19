@@ -176,7 +176,9 @@ nav {
   grid-gap: 20px; /* Adjust the gap as needed */
 
   /* On screens smaller than 768px, change to a single column */
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+  .grid-container {
     grid-template-columns: 1fr; /* One column */
   }
 }
