@@ -272,6 +272,12 @@ nav {
   padding-bottom: 0.75rem;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quote img {
+    height: 115px;
+  }
+}
+
 .quote-icon {
   font-size: 30px; /* Adjust the font size for the quote icon */
 }
