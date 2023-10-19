@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>UI Coding Challenge</title>
+    <meta
+      name="description"
+      content="Are you ready for a coding challenge? Put your front-end skills to the test by rebuilding this page on mobile and desktop."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -25,13 +25,16 @@
       <nav>
         <picture class="header-logo-image">
           <!-- Source for smaller screens (e.g., mobile) -->
-          <source media="(max-width: 768px)" srcset="./assets/mobilelogo.png" />
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/logo-mobile.png"
+          />
 
           <!-- Source for larger screens (e.g., desktop) -->
-          <source media="(min-width: 769px)" srcset="./assets/test8.png" />
+          <source media="(min-width: 769px)" srcset="./assets/logo.png" />
 
           <!-- Default image for browsers that don't support the <picture> element -->
-          <img src="./assets/test8.png" alt="Description of the image" />
+          <img src="./assets/logo.png" alt="Citizens Bank Logo" />
         </picture>
         <!-- <img
           class="header-logo-image"
@@ -164,7 +167,9 @@
     <hr class="footer-divider" />
     <footer class="footer">
       <div class="social-icons">
-        <a href="#"><img src="./assets/social.png" /></a>
+        <a href="#" aria-label="Social Media Icons">
+          ><img src="./assets/social.png" alt="Social Media Icons"
+        /></a>
         <!-- Note: This is normally what the social media structure would look like. -->
         <!-- <a href="#" class="icon"><img src="facebook.png" alt="Facebook" /></a>
         <a href="#" class="icon"><img src="twitter.png" alt="Twitter" /></a>
