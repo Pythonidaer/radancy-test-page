@@ -12,7 +12,11 @@ For this project, I adhered to using only Vanilla CSS 3 and HTML 5 to build and 
 
 - **Hidden Layers:** During the process of working with .psd files, I noticed the presence of additional hidden layers in the design. I did not re-design the website with those in mind as it was unclear as to where I should be using them.
 
+- **Quotation Cards:** Was not sure how to recreate the particular opening quote characters in the .psd, so I just defaulted to what was available in Arial font.
+
 - **Lighthouse:** Usage of Google Chrome's Lighthouse tool will lead to subsequent improvements in SEO and Accessibility prior to final submission.
+
+- **Accessibility:** With regards to the above, I opted to keep the quote author and grid item links the colors they are, which failed accessibility contrast, as the mockup appeared to contain these colors. In a real-world setting, these issues would be raised with stakeholders prior to production deployment.
 
 ## Future Plans
 
