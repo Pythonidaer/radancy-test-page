@@ -23,11 +23,21 @@
   <body>
     <header class="header">
       <nav>
-        <img
+        <picture class="header-logo-image">
+          <!-- Source for smaller screens (e.g., mobile) -->
+          <source media="(max-width: 768px)" srcset="./assets/mobilelogo.png" />
+
+          <!-- Source for larger screens (e.g., desktop) -->
+          <source media="(min-width: 769px)" srcset="./assets/test8.png" />
+
+          <!-- Default image for browsers that don't support the <picture> element -->
+          <img src="./assets/test8.png" alt="Description of the image" />
+        </picture>
+        <!-- <img
           class="header-logo-image"
           src="./assets/test8.png"
           alt="Citizens Bank"
-        />
+        /> -->
       </nav>
       <div class="trapezoid"></div>
     </header>
@@ -151,6 +161,7 @@
         </article>
       </section>
     </main>
+    <hr class="footer-divider" />
     <footer class="footer">
       <div class="social-icons">
         <a href="#"><img src="./assets/social.png" /></a>

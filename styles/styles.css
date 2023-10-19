@@ -16,12 +16,50 @@ p {
 .header {
   width: 100%;
   background-image: url('../assets/loan-officer.png');
-  height: 575px;
+  max-height: 575px;
   overflow: hidden;
   background-size: cover;
   background-position: 0 25px;
   background-repeat: no-repeat;
   /* transform: translateY(-30px); */
+}
+
+@media (max-width: 480px) {
+  .header {
+    max-height: 350px;
+    background-position: 0 120px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    max-height: 400px;
+    background-position: 0 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    max-height: 450px;
+    background-position: 0 90px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    max-height: 500px;
+    background-position: 0 50px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .header {
+    max-height: 575px;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* min-height: */
 }
 
 nav {
@@ -43,6 +81,31 @@ nav {
   /* z-index: 100; */
 }
 
+@media (max-width: 767px) {
+  nav {
+    max-height: 80px;
+    justify-content: center;
+  }
+
+  .header {
+    background-image: url('../assets/loan-officer-mobile.png');
+
+    background-size: contain;
+    background-position: 0 80px;
+    min-height: 350px;
+    margin-bottom: -1.5rem;
+  }
+  .trapezoid {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .trapezoid {
+    /* display: none; */
+  }
+}
+
 .header-logo-image,
 .investments-section,
 .grid-container,
@@ -50,6 +113,17 @@ nav {
 .quotes-section,
 .footer {
   margin: 0 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .header-logo-image,
+  .investments-section,
+  .grid-container,
+  .loans-section,
+  .quotes-section,
+  .footer {
+    margin: 0 1rem;
+  }
 }
 
 .investments-section h2,
@@ -116,6 +190,19 @@ nav {
   padding-bottom: 60px;
 }
 
+@media (max-width: 767px) {
+  .grid-container {
+    grid-gap: 0;
+  }
+  .grid-item {
+    padding-bottom: 50px;
+  }
+
+  .grid-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+
 .grid-item p {
   margin-bottom: 0.5rem;
 }
@@ -144,6 +231,12 @@ nav {
   line-height: 1.75rem;
   margin-bottom: 2.5rem;
 }
+@media (max-width: 767px) {
+  .loans-section h2,
+  .loans-section p {
+    padding: 1rem;
+  }
+}
 
 .quotes-section {
   display: flex;
@@ -164,6 +257,18 @@ nav {
   max-width: 35%;
 }
 
+@media (max-width: 767px) {
+  .quote:nth-child(2) {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+
+  .quotes-section {
+    margin-bottom: 6rem;
+  }
+}
+
 .quote img {
   padding-bottom: 0.75rem;
 }
@@ -179,7 +284,8 @@ nav {
 }
 
 .quote-author {
-  color: #00945f;
+  /* color: #00945f; */
+  color: #44b89b;
   line-height: 1.75rem;
 }
 
@@ -202,6 +308,11 @@ nav {
   }
 }
 
+.footer-divider {
+  height: 1px;
+  background-color: #00945f;
+}
+
 .footer {
   margin-bottom: 2.5rem;
 }
@@ -222,6 +333,10 @@ nav {
 
 .footer .footer-text {
   margin-bottom: 2rem;
+}
+
+.footer .footer-text a {
+  color: #888;
 }
 
 .footer .footer-links a {
