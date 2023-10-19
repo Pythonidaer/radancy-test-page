@@ -268,6 +268,19 @@ nav {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .quotes-section {
+    justify-content: center;
+  }
+  .quote {
+    min-width: 75%;
+  }
+
+  .quote:nth-child(2) {
+    padding: 2.5rem;
+  }
+}
+
 .quote img {
   padding-bottom: 0.75rem;
 }
