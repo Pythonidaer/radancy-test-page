@@ -1,8 +1,8 @@
 body {
   font-family: Arial;
-  /* background: rgb(196, 157, 157); */
 }
 
+/* GENERAL STYLING START */
 h1,
 h2,
 h3 {
@@ -13,6 +13,9 @@ p {
   color: #666666;
 }
 
+/* GENERAL STYLING END */
+
+/* HEADER & NAV START */
 .header {
   width: 100%;
   background-image: url('../assets/loan-officer.png');
@@ -21,20 +24,61 @@ p {
   background-size: cover;
   background-position: 0 25px;
   background-repeat: no-repeat;
-  /* transform: translateY(-30px); */
 }
 
-@media (max-width: 480px) {
+nav {
+  display: flex;
+  align-items: center;
+  height: 168px;
+  background: white;
+}
+
+.trapezoid {
+  border-bottom: 700px solid #005944;
+  border-left: 200px solid transparent;
+  border-right: 0 solid transparent;
+  height: 0;
+  width: 50%;
+  margin-left: auto;
+  transform: translateX(150px);
+  opacity: 0.8;
+}
+
+.header-logo-image,
+.investments-section,
+.grid-container,
+.loans-section,
+.quotes-section,
+.footer {
+  margin: 0 1.5rem;
+}
+
+@media (max-width: 767px) {
   .header {
-    max-height: 350px;
-    background-position: 0 120px;
+    background-image: url('../assets/loan-officer-mobile.png');
+
+    background-size: contain;
+    background-position: 0 80px;
+    min-height: 350px;
+    margin-bottom: -1.5rem;
   }
-}
 
-@media (min-width: 481px) and (max-width: 767px) {
-  .header {
-    max-height: 400px;
-    background-position: 0 100px;
+  nav {
+    max-height: 80px;
+    justify-content: center;
+  }
+
+  .trapezoid {
+    display: none;
+  }
+
+  .header-logo-image,
+  .investments-section,
+  .grid-container,
+  .loans-section,
+  .quotes-section,
+  .footer {
+    margin: 0 1rem;
   }
 }
 
@@ -59,73 +103,14 @@ p {
 }
 
 @media (min-width: 1920px) {
-  /* min-height: */
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  height: 168px;
-  background: white;
-}
-
-.trapezoid {
-  border-bottom: 700px solid #005944;
-  border-left: 200px solid transparent;
-  border-right: 0 solid transparent;
-  height: 0;
-  width: 50%;
-  margin-left: auto;
-  transform: translateX(150px);
-  opacity: 0.8;
-  /* z-index: 100; */
-}
-
-@media (max-width: 767px) {
-  nav {
-    max-height: 80px;
-    justify-content: center;
-  }
-
   .header {
-    background-image: url('../assets/loan-officer-mobile.png');
-
-    background-size: contain;
-    background-position: 0 80px;
-    min-height: 350px;
-    margin-bottom: -1.5rem;
-  }
-  .trapezoid {
-    display: none;
+    max-height: 800px;
+    background-position: 0 -100px;
   }
 }
+/* HEADER & NAV END */
 
-@media (max-width: 767px) {
-  .trapezoid {
-    /* display: none; */
-  }
-}
-
-.header-logo-image,
-.investments-section,
-.grid-container,
-.loans-section,
-.quotes-section,
-.footer {
-  margin: 0 1.5rem;
-}
-
-@media (max-width: 767px) {
-  .header-logo-image,
-  .investments-section,
-  .grid-container,
-  .loans-section,
-  .quotes-section,
-  .footer {
-    margin: 0 1rem;
-  }
-}
-
+/* INVESTMENTS START */
 .investments-section h2,
 .advantages-section h2 {
   text-align: center;
@@ -135,7 +120,6 @@ nav {
 
 .investments-section hr,
 .advantages-section hr {
-  /* margin-top: 1rem; */
   width: 80px;
   height: 1px;
   background-color: #00945f;
@@ -168,12 +152,14 @@ nav {
 .investments-section a:focus {
   background: #b55a00;
 }
+/* INVESTMENTS END */
 
+/* CITIZENS ADVANTAGE WITH GRID START */
 .grid-container {
   display: grid;
   margin-top: 2.5rem;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  grid-gap: 20px; /* Adjust the gap as needed */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -236,19 +222,20 @@ nav {
     padding: 1rem;
   }
 }
+/* CITIZENS ADVANTAGE WITH GRID END */
 
+/* QUOTES START */
 .quotes-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* Adjust spacing, padding, or other styles as needed */
   margin-bottom: 10rem;
 }
 
 .quote {
   flex: 1;
-  max-width: 15%; /* Adjust for your desired column width */
-  text-align: center; /* Center-align the contents */
+  max-width: 15%;
+  text-align: center;
   padding: 0 3rem;
 }
 
@@ -292,7 +279,7 @@ nav {
 }
 
 .quote-icon {
-  font-size: 30px; /* Adjust the font size for the quote icon */
+  font-size: 30px;
 }
 
 .quote blockquote {
@@ -302,7 +289,6 @@ nav {
 }
 
 .quote-author {
-  /* color: #00945f; */
   color: #44b89b;
   line-height: 1.75rem;
 }
@@ -312,20 +298,21 @@ nav {
 }
 
 .quote p:first-child::before {
-  content: '"'; /* Quotation character */
-  font-size: 5rem; /* Adjust the font size as needed */
+  content: '"';
+  font-size: 5rem;
   position: absolute;
-  top: 0; /* Adjust the position */
-  left: -30px; /* Adjust the position */
+  top: 0;
+  left: -30px;
 }
 
-/* Media query for smaller devices */
 @media (max-width: 768px) {
   .quote {
-    max-width: 100%; /* Set to full width on smaller screens */
+    max-width: 100%;
   }
 }
+/* QUOTES END */
 
+/* FOOTER START */
 .footer-divider {
   height: 1px;
   background-color: #00945f;
@@ -361,3 +348,4 @@ nav {
   text-decoration: none;
   color: #000;
 }
+/* FOOTER END */
